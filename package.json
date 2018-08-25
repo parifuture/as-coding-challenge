@@ -1,0 +1,28 @@
+{
+  "name": "as-coding-challenge",
+  "version": "1.0.0",
+  "description": "coding challenge for AltSchool",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parifuture/as-coding-challenge.git"
+  },
+  "keywords": [
+    "coding",
+    "challenge",
+    "front",
+    "end"
+  ],
+  "author": "Parikshit Tiwari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/parifuture/as-coding-challenge/issues"
+  },
+  "homepage": "https://github.com/parifuture/as-coding-challenge#readme",
+  "dependencies": {
+    "bulma": "^0.7.1"
+  }
+}
