@@ -1,0 +1,92 @@
+[
+    {
+        "name": "Jean Jacques Rousseau",
+        "birth": 1712,
+        "death": 1778,
+        "summary": "Wrote Emile, the life of a hypothetical child from birth to adolescence; return to nature and a naturalistic approach to education; idea of 'unfolding;' basic innate goodness of children; and children develop through experiences with the environment."
+    },
+    {
+        "name": "Johann Heinrich Pestalozzi",
+        "birth": 1746,
+        "death": 1827,
+        "summary": "Back death to death: nature concepts; started school at Neuhof and developed ideas of integrating of home life, vocational education, and education for reading and writing; and wrote Leonard and Gertrude, How Gertrude Teaches Her Children and Book for Mothers."
+    },
+    {
+        "name": "Robert Owen",
+        "birth": 1771,
+        "death": 1858,
+        "summary": "Environmentalist; believed that by controlling the circumstances and consequent outcomes of child rearing, a new and more perfect society could be built; and opened an infant school in 1861."
+    },
+    {
+        "name": "Friedrich Wilhelm Froebel",
+        "birth": 1782,
+        "death": 1852,
+        "summary": "Identified as 'Father of Kindergarten', developed a curriculum and methodology gifts and occupations, role of play, rhymes and songs, etc., and wrote Mother's Songs, Games, and Stories. Developed the 'Froebel Gifts', intricate and beautiful manipulative materials."
+    },
+    {
+        "name": "Mary Lyon.",
+        "birth": 1797,
+        "death": 1849,
+        "summary": "Founder of the first college for women in the U.S. It opens in 1837 with 87 students"
+    },
+    {
+        "name": "Elizabeth Palmer Peabody",
+        "birth": 1804,
+        "death": 1894,
+        "summary": "Champion of education reform and visionary teacher. Established the first formal American Kindergarten in 1860. Studied and applied the work of Froebel in America. Mrs. Peabody was a proponent of the idea that each child should receive education that emerged from their innate capacity"
+    },
+    {
+        "name": "Alfred Binet",
+        "birth": 1857,
+        "death": 1911,
+        "summary": "A french psychologist who invented the first practical intelligence test, the Binet-Simon Scale"
+    },
+    {
+        "name": "John Dewey",
+        "birth": 1859,
+        "death": 1952,
+        "summary": "Was the leader of the progressive education movement, emphasizing the child and his interests, the child centered curriculum or child centered school; and wrote several books, including My Pedagogical Creed which set forth his beliefs that education is 'a process of living, not a preparation for future living'."
+    },
+    {
+        "name": "Maria Montessori",
+        "birth": 1870,
+        "death": 1952,
+        "summary": "Known for her philosophy of education called the Montessori method, it is still used in some public and private schools throughout the world"
+    },
+    {
+        "name": "Carl Gustav Jung",
+        "birth": 1875,
+        "death": 1961,
+        "summary": "Founder of analytical psychology; created some best known psychological concepts including the archetype, the collective unconscious, the complex, and the extraversion and introversion"
+    },
+    {
+        "name": "Lev Vygotsky",
+        "birth": 1896,
+        "death": 1934,
+        "summary": "Constructivist; believed that children's mental, language and social development is supported and enhanced by others through social interaction. Bruner applies the term “scaffolding” to the support that teachers provide their students in the zone of proximal development."
+    },
+    {
+        "name": "Jean Piaget",
+        "birth": 1896,
+        "death": 1980,
+        "summary": "Developed a widely accepted theory of intellectual development, identifying four major stages of intellectual thinking. His writings and ideas have made a major impact on early childhood education programs since the 1960s."
+    },
+    {
+        "name": "Benjamin Bloom",
+        "birth": 1913,
+        "death": 1999,
+        "summary": "Contributions to the classification of educational objectives and theory of mastery-learning"
+    },
+    {
+        "name": "Lee Schulman",
+        "birth": 1938,
+        "death": -1,
+        "summary": "He is an educational psychologist who had made notable contributions to the study of teaching, assessment of teaching, and the fields of medicine, science, and mathematics. Schulman is credited with popularizing the phrase, Pedagogical Content Knowledge."
+    },
+    {
+        "name": "Ruby Bridges",
+        "birth": 1954,
+        "death": -1,
+        "summary": "First African American to attend William Frantz Elementary School in New Orleans in 1960. She became a class of one as parents remove all Caucasian students from the school."
+    }
+]
