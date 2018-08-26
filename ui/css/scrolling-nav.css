@@ -28,7 +28,33 @@
   }
 
   code {
+    color: #FFF;
+    padding-left: .5rem;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+  }
+  
+  .alert-primary {
+    background-color: #1da9df;
+  }
+
+  .container {
+    padding: 1.5rem;
+    margin-right: 0;
+    margin-left: 0;
+    border-width: .2rem;
+    position: relative;
+  }
+
+  .time-block {
+    position: absolute;
+  }
+
+  .small {
+    font-size: 40%;
+  }
+
+  .human-alive > .alert-primary {
+    background-color: red;
   }
