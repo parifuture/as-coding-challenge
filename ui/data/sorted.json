@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Jean Jacques Rousseau",
+        "birth": 1712,
+        "death": 1778,
+        "summary": "Wrote Emile, the life of a hypothetical child from birth to adolescence; return to nature and a naturalistic approach to education; idea of 'unfolding;' basic innate goodness of children; and children develop through experiences with the environment."
+    },
+    {
+        "name": "Johann Heinrich Pestalozzi",
+        "birth": 1746,
+        "death": 1827,
+        "summary": "Back death to death: nature concepts; started school at Neuhof and developed ideas of integrating of home life, vocational education, and education for reading and writing; and wrote Leonard and Gertrude, How Gertrude Teaches Her Children and Book for Mothers."
+    },
+    {
+        "name": "Robert Owen",
+        "birth": 1771,
+        "death": 1858,
+        "summary": "Environmentalist; believed that by controlling the circumstances and consequent outcomes of child rearing, a new and more perfect society could be built; and opened an infant school in 1861."
+    },
+    {
+        "name": "Friedrich Wilhelm Froebel",
+        "birth": 1782,
+        "death": 1852,
+        "summary": "Identified as 'Father of Kindergarten', developed a curriculum and methodology gifts and occupations, role of play, rhymes and songs, etc., and wrote Mother's Songs, Games, and Stories. Developed the 'Froebel Gifts', intricate and beautiful manipulative materials."
+    },
+    {
+        "name": "Mary Lyon.",
+        "birth": 1797,
+        "death": 1849,
+        "summary": "Founder of the first college for women in the U.S. It opens in 1837 with 87 students"
+    }
+]

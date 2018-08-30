@@ -4,12 +4,13 @@ class TimeLine {
         this.timelineParsedObjects = [];
         this.timelineHtmlOuput = '';    
         this.pixelMultiplier = 5;
+        this.marginTops =[];
         this.endRange = new Date().getFullYear();
     }
 
     getHumanData() {
         let self = this;
-        self.makeAjaxCallFunction('/ui/data/human.json', function (humanData) {
+        self.makeAjaxCallFunction('/ui/data/sorted.json', function (humanData) {
             self.humanJsonData = humanData;
         });
     }
@@ -55,23 +56,68 @@ class TimeLine {
     }
 
     createElement(birthYear, deathYear, nameOfPerson) {
-        let colorClass = ""
+        let colorClass = "";        
         let deathOrCurrentYear = deathYear;
-        let marginLeft = (birthYear - this.firstBirthYear) * this.pixelMultiplier;
+        let marginLeft = (birthYear - this.firstBirthYear) * this.pixelMultiplier;    
         if(birthYear > this.timelineBirthYear && birthYear < this.timelineDeathYear) {
-            this.currentMarginTop = this.currentMarginTop - 35;
-        } else if(deathOrCurrentYear > this.timelineDeathYear){
+            this.currentMarginTop = this.getMarginTop(birthYear, deathOrCurrentYear);
+        } else {
             this.currentMarginTop = 180;
+            this.marginTops.unshift({birthYear: birthYear, deathYear: deathOrCurrentYear, marginTop: 180})
             this.timelineDeathYear = deathOrCurrentYear;
-        }        
+        }
         if (deathYear == -1) {
             colorClass = "human-alive";
             deathOrCurrentYear = new Date().getFullYear();
-        }                
+        }
         let widthOfDiv = (deathOrCurrentYear - birthYear) * this.pixelMultiplier;
-
         let element  = `<div class="time-block ${colorClass}" style="width:${widthOfDiv}px;left:${marginLeft}px;top:${this.currentMarginTop}px;"><div class="alert alert-primary" role="alert"><p class="bd-notification is-primary"><code>${nameOfPerson} : ${birthYear}-${deathOrCurrentYear}</code></p></div></div>`;
         return element;
+    }
+
+    getMarginTop(birthYear, deathYear) {
+        let answer = 180, temp;
+
+        // let collision = false;
+        this.marginTops.some(obj => {
+            if(birthYear >= obj.birthYear && birthYear < obj.deathYear) {
+                let tempMarginTop = obj.marginTop - 35;
+                // check if the margintop exists in array
+                if(this.ifMarginTopExists(tempMarginTop,birthYear,deathYear)) {
+                    // obj.marginTop  = ifMarginTopExists;
+                    // obj.birthYear = birthYear;
+                    // obj.deathYear = deathYear;
+                    // answer = obj.marginTop;
+                    answer = ifMarginTopExists;
+                    return true;
+                } else {
+                    obj.marginTop  = obj.marginTop - 35;
+                    obj.birthYear = birthYear;
+                    obj.deathYear = deathYear;
+                    answer = obj.marginTop;
+                    return true;
+                }
+            }
+        });
+        return answer;
+    }
+
+    ifMarginTopExists(margin, birthYear, deathYear) {
+        self = this;
+        for (let i=0; i<self.marginTops.length;i++) {
+            if(self.marginTops[i] == margin) {
+                if(birthYear >= self.marginTops[i].birthYear && birthYear < self.marginTops[i].deathYear) {
+                    margin = margin-35;
+                    ifMarginTopExists(margin-35, birthYear, deathYear);
+                } else {
+                    self.marginTops[i].marginTop  = ifMarginTopExists;
+                    self.marginTops[i].birthYear = birthYear;
+                    self.marginTops[i].deathYear = deathYear;
+                    return margin;
+                }
+            }
+        }
+        return false;
     }
 
     makeAjaxCallFunction(url, callback) {
