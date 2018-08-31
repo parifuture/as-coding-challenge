@@ -63,7 +63,7 @@ class TimeLine {
             this.currentMarginTop = this.getMarginTop(birthYear, deathOrCurrentYear);
         } else {
             this.currentMarginTop = 180;
-            this.marginTops.unshift({birthYear: birthYear, deathYear: deathOrCurrentYear, marginTop: 180})
+            this.marginTops.unshift({birthYear: birthYear, deathYear: deathOrCurrentYear, marginTop: 180});
             this.timelineDeathYear = deathOrCurrentYear;
         }
         if (deathYear == -1) {
@@ -110,9 +110,10 @@ class TimeLine {
                     margin = margin-35;
                     ifMarginTopExists(margin-35, birthYear, deathYear);
                 } else {
-                    self.marginTops[i].marginTop  = ifMarginTopExists;
-                    self.marginTops[i].birthYear = birthYear;
-                    self.marginTops[i].deathYear = deathYear;
+                    self.marginTops.unshift({birthYear: birthYear, deathYear: deathOrCurrentYear, marginTop: margin})
+                    // self.marginTops[i].marginTop  = ifMarginTopExists;
+                    // self.marginTops[i].birthYear = birthYear;
+                    // self.marginTops[i].deathYear = deathYear;
                     return margin;
                 }
             }

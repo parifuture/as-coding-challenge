@@ -47,6 +47,10 @@
     position: relative;
   }
 
+  #timeline-container {
+    min-height: 450px;
+  }
+
   .time-block {
     position: absolute;
   }
@@ -57,4 +61,17 @@
 
   .human-alive > .alert-primary {
     background-color: red;
+  }
+
+  /* animation code */
+  html.sr .load-hidden {
+    visibility: hidden;
+  }
+
+  /* extension */
+  html.sr .time-block {
+    visibility: hidden;
+  }
+  .add-human-modal {
+    visibility: hidden;
   }
