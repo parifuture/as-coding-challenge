@@ -63,6 +63,17 @@
     background-color: red;
   }
 
+  .myAlert-top {
+    display: none;
+    position: fixed;
+    top: 250px;
+    left: 5%;
+    width: 25%;
+    padding: 1rem;
+    margin: 1rem;
+    height: 4rem;
+  }
+
   /* animation code */
   html.sr .load-hidden {
     visibility: hidden;

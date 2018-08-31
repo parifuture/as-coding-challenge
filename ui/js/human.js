@@ -156,6 +156,13 @@ class TimeLine {
     }
 }
 
+function myAlertTop(){
+    $(".myAlert-top").show();
+    setTimeout(function(){
+      $(".myAlert-top").hide(); 
+    }, 4000);
+  }
+
 $(document).ready(function () {
     let createTimeLineObj = new TimeLine();
     createTimeLineObj.getHumanData();
@@ -164,6 +171,7 @@ $(document).ready(function () {
         createTimeLineObj.createTimeline();
         ScrollReveal().reveal('.time-block', { interval: 200, distance: '150px' });
         ScrollReveal().reveal('.add-human-modal', { interval: 200 });
+        myAlertTop();
     });
 
     $("#add-human-btn").click(function () {
@@ -172,7 +180,7 @@ $(document).ready(function () {
         let death = document.getElementById('death-year').value;
         let summary = document.getElementById('summary-text').value;
         if (name.length > 0 && birth.length > 0 && death.length > 0) {
-            createTimeLineObj.humanJsonData.push({name:name,birth:birth,death:death,summary:summary});
+            createTimeLineObj.humanJsonData.push({name:name,birth:parseInt(birth),death:parseInt(death),summary:summary});
             createTimeLineObj.createTimeline();
             $("#addHuman").modal('hide');
             ScrollReveal().reveal('.time-block', { interval: 200, distance: '150px' });
